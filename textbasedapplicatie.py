@@ -4,7 +4,7 @@ import os
 
 def begin():
     print("welkom bij mijn tekstbased applicatie\n")
-    print ("Eerst een kleine intro:\n Jij en 2 andere professionele voetballers uit Nigeria, gaan een avondje op stap en worden gedrogeerd, jullie worden wakker in Zuid-Afrika en hebben geen idee heo jullie daar gekomen zijn. Wat jullie wel weten is dat jullie heel snel naar Nederland moeten voor het WK voetbal, maar jullie zijn wel beroofd van al jullie spullen. Dus hoe jullie naar Nederland gaan komen is de vraag... ")
+    print("Eerst een kleine intro:\n Jij en 2 andere professionele voetballers uit Nigeria, gaan een avondje op stap en worden gedrogeerd, jullie worden wakker in Zuid-Afrika en hebben geen idee heo jullie daar gekomen zijn. Wat jullie wel weten is dat jullie heel snel naar Nederland moeten voor het WK voetbal, maar jullie zijn wel beroofd van al jullie spullen. Dus hoe jullie naar Nederland gaan komen is de vraag... ")
     print("\n")
     beginnen = input("wil je hem spelen? ja/nee ")
     if beginnen == "ja":
@@ -268,10 +268,14 @@ def  tien():
 def tekst2():
     os.system('clear') 
     print("In de stad lopen jullie een beetje levenloos rond het is al avond. Dan lopen jullie langs een politiebureau en besluiten naar binnen te gaan om hulp te vragen. Het verloopt eerst een beetje stroef omdat jullie geen legitimatie hebben, maar ze komen er snel achter wie jullie zijn en ze regelen een vlucht naar Spanje voor de volgende dag ")
-    antwoord = input(": ")
-    print("type 'ja' om verder te spelen")
-    if  antwoord == " ja": 
+    print("type 'ja'of 'j' om verder te spelen")
+    antwoord = input(': ')
+    if  antwoord == "ja": 
         elf() 
+    elif antwoord == "j":
+        elf()
+    else:
+        print("typ 'ja' of 'j' om verder te spelen") 
 
 def  elf():
     os.system('clear') 
